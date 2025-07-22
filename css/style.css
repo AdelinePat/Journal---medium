@@ -127,6 +127,12 @@ hr {
   font-size: 1.4rem;
 }
 
+.underline {
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--grey);
+    margin-bottom: 2rem;
+}
+
 /* header */
 header {
   display: grid;
@@ -265,4 +271,51 @@ nav {
 .ads ::placeholder {
     color: var(--dark);
     font-family: "Cormorant Garamond", serif;
+}
+
+/* content */
+
+.content {
+    display: flex;
+    margin: 3rem 0;
+}
+
+.articles {
+    flex: auto;
+}
+
+.articles article {
+    display: grid;
+    grid-template-columns: 1fr 80px;
+    grid-auto-rows: auto;
+    grid-template-areas: 
+    "title image"
+    "content image"
+    "author image"
+    "hint image";
+}
+
+.articles article img {
+    grid-area: image;
+}
+
+.articles article h3 {
+    grid-area: title;
+}
+
+.articles article p {
+    grid-area: content;
+}
+
+.articles article .article-author {
+    grid-area: author;
+}
+
+.articles article .text-hint {
+    grid-area: hint;
+}
+
+/* popular */
+.popular {
+    flex: 350px;
 }
