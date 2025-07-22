@@ -1,0 +1,104 @@
+/* reset */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+/* variables */
+:root {
+  --primary: #be2526;
+  --dark: #333;
+  --secondary: #0d0d0d;
+  --grey: #ddd;
+  --grey-light: #eee;
+  --grey-hint: #555;
+}
+/* general */
+:root {
+  font-size: 65.2%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Staatliches", sans-serif;
+}
+
+a {
+  font-size: 1.6rem;
+  color: var(--dark);
+  text-decoration: none;
+}
+/* utility */
+.container {
+  display: block;
+  margin: auto;
+  max-width: 1100px;
+}
+
+.text-primary {
+    color: var(--primary);
+}
+
+.text-primary:hover {
+    opacity: 0.8;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    border: none;
+    font-size: 1.6rem;
+    transition: all 0.2s ease-in;
+}
+
+.btn-light {
+    background: white;
+    color: var(--primary);
+    border: 1px solid var(--primary)
+}
+
+.btn-light:hover {
+    color: white;
+    background: var(--primary);
+}
+
+/* header */
+header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  line-height: 3.5rem;
+  margin: 0.5rem auto;
+  align-items: center;
+}
+
+header a {
+    display: block;
+    padding: 1rem;
+}
+
+header .logo {
+  font-size: 3rem;
+  font-family: "Staatliches", sans-serif;
+}
+
+header ul {
+  display: flex;
+  align-items: center;
+}
+
+header ul li {
+    padding: 1rem 1.6rem;
+}
