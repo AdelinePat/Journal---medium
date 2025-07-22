@@ -121,12 +121,11 @@ hr {
   margin-right: 1rem;
   margin-left: 1rem;
 }
-/* generic */
+
 .article-author {
   font-weight: 700;
   font-size: 1.4rem;
 }
-
 .underline {
   padding-bottom: 1.5rem;
   border-bottom: 1px solid var(--grey);
