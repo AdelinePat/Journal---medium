@@ -71,7 +71,7 @@ hr {
   margin: auto;
   max-width: 1100px;
   min-height: 1500px;
-  padding:0 1.6rem
+  padding: 0 1.6rem;
 }
 
 .text-primary {
@@ -106,15 +106,15 @@ hr {
 }
 
 .btn-dark {
-    background: var(--dark);
-    color: white;
-    border: 1px solid transparent;
+  background: var(--dark);
+  color: white;
+  border: 1px solid transparent;
 }
 
 .btn-dark:hover {
-    background: white;
-    border: 1px solid var(--dark);
-    color: var(--dark);
+  background: white;
+  border: 1px solid var(--dark);
+  color: var(--dark);
 }
 
 .mx-1 {
@@ -128,9 +128,9 @@ hr {
 }
 
 .underline {
-    padding-bottom: 1.5rem;
-    border-bottom: 1px solid var(--grey);
-    margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--grey);
+  margin-bottom: 2rem;
 }
 
 /* header */
@@ -260,62 +260,89 @@ nav {
 }
 
 .ads form input {
-    background: var(--grey-light);
-    border: 0;
-    border-bottom: 1px solid var(--grey);
-    padding: 1rem 0;
-    margin-right: 1rem;
-    outline: 0;
+  background: var(--grey-light);
+  border: 0;
+  border-bottom: 1px solid var(--grey);
+  padding: 1rem 0;
+  margin-right: 1rem;
+  outline: 0;
 }
 
 .ads ::placeholder {
-    color: var(--dark);
-    font-family: "Cormorant Garamond", serif;
+  color: var(--dark);
+  font-family: "Cormorant Garamond", serif;
 }
 
 /* content */
 
 .content {
-    display: flex;
-    margin: 3rem 0;
+  display: flex;
+  margin: 3rem 0;
+  align-items: flex-start;
 }
 
 .articles {
-    flex: auto;
+  flex: auto;
 }
 
 .articles article {
-    display: grid;
-    grid-template-columns: 1fr 80px;
-    grid-auto-rows: auto;
-    grid-template-areas: 
+  display: grid;
+  grid-template-columns: 1fr 80px;
+  grid-auto-rows: auto;
+  grid-template-areas:
     "title image"
     "content image"
     "author image"
     "hint image";
+  margin-bottom: 2.5rem;
 }
 
 .articles article img {
-    grid-area: image;
+  grid-area: image;
+}
+
+.articles article h3,
+.articles article p {
+  margin: 0.5rem 0;
 }
 
 .articles article h3 {
-    grid-area: title;
+  grid-area: title;
 }
 
 .articles article p {
-    grid-area: content;
+  grid-area: content;
 }
 
 .articles article .article-author {
-    grid-area: author;
+  grid-area: author;
 }
 
 .articles article .text-hint {
-    grid-area: hint;
+  grid-area: hint;
 }
 
 /* popular */
 .popular {
-    flex: 350px;
+  flex: 350px;
+  padding: 0 3rem;
+  position: sticky;
+  top: 50px;
+}
+
+.popular ul li {
+  display: grid;
+  grid-template-columns: 50px auto;
+  place-items: center center;
+  margin-bottom: 1rem;
+}
+
+.popular ul li div:first-child {
+  font-size: 3rem;
+  color: var(--grey-hint);
+}
+
+.popular ul li p,
+.popular ul li h3 {
+  margin: 0.3rem;
 }
